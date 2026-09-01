@@ -10,7 +10,7 @@ The OCG represents a data center as a graph of entities and relationships, built
 
 ## Additional Resources
 
-> ApeiroRA is the EU-funded reference architecture that Autonomous Operations is built on.
+> ApeiroRA is the EU-funded reference architecture that Operational Context Graph is built on.
 
 - [Apeiro Reference Architecture](https://apeirora.eu)
 - [ApeiroRA Github Organization](https://github.com/apeirora)
