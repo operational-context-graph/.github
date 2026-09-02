@@ -10,7 +10,7 @@ If you believe you have found a security vulnerability in any SAP-owned reposito
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
-Instead, please report them via the SAP Trust Center at [https://www.sap.com/about/trust-center/security/incident-management.html](https://www.sap.com/about/trust-center/security/incident-management.html).
+Instead, please report them via the SAP Trust Center at [https://www.sap.com/about/trust-center/security/incident-management.html](https://www.sap.com/about/trust-center/security/incident-management.html) or use the **GitHub private security advisory** feature of the affected repository. You can find it under the "Security" tab - "Report a vulnerability".
 
 If you prefer to submit via email, please send an email to [secure@sap.com](mailto:secure@sap.com). If possible, encrypt your message with our PGP key; please download it from the [SAP Trust Center](https://www.sap.com/keyblock).
 
