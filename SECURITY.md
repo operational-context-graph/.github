@@ -10,20 +10,20 @@ If you believe you have found a security vulnerability in any SAP-owned reposito
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
-Instead, please report them via the SAP Trust Center at [https://www.sap.com/about/trust-center/security/incident-management.html](https://www.sap.com/about/trust-center/security/incident-management.html) or use the **GitHub private security advisory** feature of the affected repository. You can find it under the "Security" tab - "Report a vulnerability".
+Instead, please report them via the SAP Trust Center at [https://www.sap.com/about/trust-center/security/incident-management.html](https://www.sap.com/about/trust-center/security/incident-management.html) or use the [**GitHub private security advisory**](https://github.com/operational-context-graph/.github/security/advisories/new) feature of the affected repository. You can find it under the "Security" tab - "Report a vulnerability".
 
 If you prefer to submit via email, please send an email to [secure@sap.com](mailto:secure@sap.com). If possible, encrypt your message with our PGP key; please download it from the [SAP Trust Center](https://www.sap.com/keyblock).
 
-Please include the requested information listed below (as much as you can provide) to help us better understand the nature and scope of the possible issue:
+Please include the following information (as much as you can provide) to help us better understand the nature and scope of the possible issue:
 
-  - The repository name or URL
-  - Type of issue (buffer overflow, SQL injection, cross-site scripting, etc.)
-  - Full paths of the source file(s) related to the manifestation of the issue
-  - The location of the affected source code (tag/branch/commit or direct URL)
-  - Any particular configuration required to reproduce the issue
-  - Step-by-step instructions to reproduce the issue
-  - Proof-of-concept or exploit code (if possible)
-  - Impact of the issue, including how an attacker might exploit the issue
+- The repository name or URL
+- Type of issue (buffer overflow, SQL injection, cross-site scripting, etc.)
+- Full paths of the source file(s) related to the manifestation of the issue
+- The location of the affected source code (tag/branch/commit or direct URL)
+- Any particular configuration required to reproduce the issue
+- Step-by-step instructions to reproduce the issue
+- Proof-of-concept or exploit code (if possible)
+- Impact of the issue, including how an attacker might exploit the issue
 
 This information will help us triage your report more quickly.
 

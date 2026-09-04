@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 # ----
 
-# Protect all security relevant files
+# Default ownership
+* @operational-context-graph/repository-admins
 
-.github/CODEOWNERS @operational-context-graph/admin
-renovate.json @operational-context-graph/admin
