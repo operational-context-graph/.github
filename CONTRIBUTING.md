@@ -38,6 +38,23 @@ The following rule governs code contributions:
 * Due to legal reasons, contributors will be asked to accept a Developer Certificate of Origin (DCO) when they create the first pull request to this project. This happens in an automated fashion during the submission process. This project uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 * Contributions must follow our [guidelines on AI-generated code](CONTRIBUTING_USING_GENAI.md) in case you are using such tools. If you are using AI coding agents (e.g. Claude Code, OpenCode, Codex,), you must additionally follow the rules defined in `AGENTS.md` of the respective repository.
 
+## Spec-Driven Development with OpenSpec
+
+For non-trivial new components, this project uses [OpenSpec](https://github.com/Fission-AI/OpenSpec) to drive the work from a written spec: propose, then apply, then verify. The repositories ship a `/sdd-propose` skill that runs a failure-mode elicitation before the spec is generated, so edge cases surface before implementation starts.
+
+**When to use.** Reach for spec-driven development when any one of these holds:
+
+* Boundary conditions are non-obvious, such as concurrency, retry, partial failure, or ordering.
+* The spec will be read as a design document, because it has multiple consumers, is security-relevant, or must be traceable.
+* The contract is long-lived, because it will be extended, versioned, or depended on.
+* Team standards must apply consistently across the component.
+
+**When to avoid.** Skip it when all of these hold: the work is simple and well-bounded, it is short-lived or throwaway, and no downstream consumer needs the spec. A plain prompt plus a design review is enough, and the overhead of spec-driven development returns nothing here.
+
+**How to store artifacts.** Commit `openspec/specs/` and `openspec/config.yaml`. These are durable design documents. The `openspec/changes/` directory and `elicitation-*.md` files are working artifacts and stay gitignored. Usage documentation, such as README and godoc, is still written by hand.
+
+See [`repository-template-ocg`](https://github.com/operational-context-graph/repository-template-ocg) for the reference setup.
+
 ## Issues and Planning
 
 * We use GitHub issues to track bugs and enhancement requests.
