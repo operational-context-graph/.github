@@ -51,9 +51,9 @@ For non-trivial new components, this project uses [OpenSpec](https://github.com/
 
 **When to avoid.** Skip it when all of these hold: the work is simple and well-bounded, it is short-lived or throwaway, and no downstream consumer needs the spec. A plain prompt plus a design review is enough, and the overhead of spec-driven development returns nothing here.
 
-**How to store artifacts.** Commit `openspec/specs/` and `openspec/config.yaml`. These are durable design documents. The `openspec/changes/` directory and `elicitation-*.md` files are working artifacts and stay gitignored. Usage documentation, such as README and godoc, is still written by hand.
+**How to store artifacts.** Commit `openspec/specs/` and `openspec/config.yaml`. Usage documentation, such as README and godoc, is still written by hand.
 
-See [`repository-template-ocg`](https://github.com/operational-context-graph/repository-template-ocg) for the reference setup.
+See [`repository-template`](https://github.com/operational-context-graph/repository-template) for the reference setup.
 
 ## Issues and Planning
 
